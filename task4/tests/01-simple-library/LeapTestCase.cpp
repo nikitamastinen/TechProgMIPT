@@ -6,11 +6,6 @@
 
 #include <Functions.h>
 
-TEST_F(LeapTestCase, TestSum)
-{
-  ASSERT_EQ(Add(2, 3), 5);
-}
-
 TEST_F(LeapTestCase, TestYear)
 {
   ASSERT_THROW(IsLeap(-2020), std::invalid_argument);
